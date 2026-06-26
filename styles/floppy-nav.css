@@ -1,0 +1,135 @@
+.floppy-nav {
+  position: fixed;
+  top: 18vh;
+  right: -142px;
+  z-index: 90;
+  width: 250px;
+  height: 460px;
+}
+
+.floppy-link {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: clamp(150px, 16vw, 245px);
+  transform-origin: right center;
+  filter: drop-shadow(8px 8px 0 rgba(0, 0, 0, 0.35));
+}
+
+.floppy-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.floppy-link--home {
+  top: 0;
+  transform: translateX(0) rotate(2deg);
+}
+
+.floppy-link--join {
+  top: 78px;
+  transform: translateX(38px) rotate(-3deg);
+  animation: floppy-join-close 180ms steps(4, end) both;
+}
+
+.floppy-link--resources {
+  top: 145px;
+  transform: translateX(76px) rotate(3deg);
+  animation: floppy-resources-close 180ms steps(4, end) both;
+}
+
+.floppy-nav:hover,
+.floppy-nav:focus-within {
+  right: -22px;
+}
+
+.floppy-nav:hover .floppy-link--home,
+.floppy-nav:focus-within .floppy-link--home {
+  transform: translateX(0) rotate(0);
+}
+
+.floppy-nav:hover .floppy-link--join,
+.floppy-nav:focus-within .floppy-link--join {
+  animation: floppy-join-open 260ms steps(5, end) both;
+}
+
+.floppy-nav:hover .floppy-link--resources,
+.floppy-nav:focus-within .floppy-link--resources {
+  animation: floppy-resources-open 320ms steps(5, end) both;
+}
+
+.floppy-link:focus-visible {
+  outline: 3px solid #ffd21f;
+  outline-offset: 4px;
+}
+
+@keyframes floppy-join-open {
+  from {
+    top: 78px;
+    transform: translateX(38px) rotate(-3deg);
+  }
+
+  to {
+    top: 138px;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes floppy-resources-open {
+  from {
+    top: 145px;
+    transform: translateX(76px) rotate(3deg);
+  }
+
+  to {
+    top: 276px;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes floppy-join-close {
+  from {
+    top: 138px;
+    transform: translateX(0) rotate(0);
+  }
+
+  to {
+    top: 78px;
+    transform: translateX(38px) rotate(-3deg);
+  }
+}
+
+@keyframes floppy-resources-close {
+  from {
+    top: 276px;
+    transform: translateX(0) rotate(0);
+  }
+
+  to {
+    top: 145px;
+    transform: translateX(76px) rotate(3deg);
+  }
+}
+
+@media (max-width: 760px) {
+  .floppy-nav {
+    top: 14vh;
+    right: -112px;
+    width: 205px;
+    height: 380px;
+  }
+
+  .floppy-nav:hover,
+  .floppy-nav:focus-within {
+    right: -18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floppy-link,
+  .floppy-nav:hover .floppy-link,
+  .floppy-nav:focus-within .floppy-link {
+    animation: none;
+  }
+}
