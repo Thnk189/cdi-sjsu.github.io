@@ -2,16 +2,22 @@ import '../styles/project-gallery.css';
 
 const projects = [
   {
-    title: 'VGA Controller',
+    title: 'VGA Game Of Life',
     image: 'images/under-construction-warning.jpg',
     github: 'https://github.com/cdi-sjsu',
-    description: 'Verilog display timing project for sync pulses, pixel counters, and video experiments. This card is a placeholder while the repo gets cleaned up with diagrams, waveforms, and a small demo path.',
+    description: 'Verilog implementation of John Conway`s Game Of Life, Submitted to TinyTapeout in November 2025.',
   },
   {
     title: '8-bit Password Detector',
     image: 'images/under-construction-warning.jpg',
     github: 'https://github.com/nicojeda189/CDI-Beginner-Workshops/tree/main/8-bitPasswordComparator',
     description: 'Shift comparator project turning into an 8-bit password detector. A keypad or MCU enters a value from 0-255, the design converts/checks the binary pattern, then reports whether the password matched.',
+  },
+  {
+    title: 'Template',
+    image: 'images/under-construction-warning.jpg',
+    github: '#',
+    description: 'Hey Nic this is Nic making this template because I know you gonna forget how to get to this file its the ONE of TWO self explanatory java script files, just copy paste BOI!!!',
   },
 ];
 

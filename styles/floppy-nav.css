@@ -1,4 +1,5 @@
 .floppy-nav {
+  /* old outside-screen floppy nav, still used on pages that need it */
   position: fixed;
   top: 18vh;
   right: -142px;
@@ -51,17 +52,80 @@
 
 .floppy-nav:hover .floppy-link--join,
 .floppy-nav:focus-within .floppy-link--join {
-  animation: floppy-join-open 260ms steps(5, end) both;
+  animation: floppy-join-open 250ms steps(5, end) both;
 }
 
 .floppy-nav:hover .floppy-link--resources,
 .floppy-nav:focus-within .floppy-link--resources {
-  animation: floppy-resources-open 320ms steps(5, end) both;
+  animation: floppy-resources-open 300ms steps(5, end) both;
 }
 
 .floppy-link:focus-visible {
   outline: 3px solid #ffd21f;
   outline-offset: 4px;
+}
+
+.floppy-nav--side {
+  /* sidebar version: three tiny floppies in a row */
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.floppy-nav--side:hover,
+.floppy-nav--side:focus-within {
+  right: auto;
+  height: auto;
+}
+
+.floppy-nav--side .floppy-link {
+  position: static;
+  display: block;
+  width: 67px;
+  height: 67px;
+  transform: rotate(-1deg);
+  animation: none;
+  transition: transform 120ms steps(3, end), filter 120ms steps(3, end);
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .35));
+}
+
+.floppy-nav--side .floppy-link img {
+  width: 67px;
+  height: 67px;
+  object-fit: contain;
+}
+
+.floppy-nav--side .floppy-link--home,
+.floppy-nav--side .floppy-link--join,
+.floppy-nav--side .floppy-link--resources,
+.floppy-nav--side:hover .floppy-link--home,
+.floppy-nav--side:hover .floppy-link--join,
+.floppy-nav--side:hover .floppy-link--resources,
+.floppy-nav--side:focus-within .floppy-link--home,
+.floppy-nav--side:focus-within .floppy-link--join,
+.floppy-nav--side:focus-within .floppy-link--resources {
+  top: auto;
+  right: auto;
+  animation: none;
+}
+
+.floppy-nav--side .floppy-link:nth-child(2) {
+  transform: rotate(1deg);
+}
+
+.floppy-nav--side .floppy-link:nth-child(3) {
+  transform: rotate(-2deg);
+}
+
+.floppy-nav--side .floppy-link:hover,
+.floppy-nav--side .floppy-link:focus-visible {
+  transform: scale(1.07) rotate(0);
+  filter: drop-shadow(8px 8px 0 rgba(0, 0, 0, .4));
 }
 
 @keyframes floppy-join-open {
@@ -71,7 +135,7 @@
   }
 
   to {
-    top: 138px;
+    top: 158px;
     transform: translateX(0) rotate(0);
   }
 }
@@ -123,6 +187,14 @@
   .floppy-nav:hover,
   .floppy-nav:focus-within {
     right: -18px;
+  }
+
+  .floppy-nav--side,
+  .floppy-nav--side:hover,
+  .floppy-nav--side:focus-within {
+    position: static;
+    width: 100%;
+    height: auto;
   }
 }
 

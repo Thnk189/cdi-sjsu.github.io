@@ -1,65 +1,45 @@
 # Chip Design Initiative Website
 
-Static multi-page website for the Chip Design Initiative club.
-
-## Tailwind Workflow
-
-This site uses Tailwind CSS through the CDN in each HTML page:
-
-```html
-<script src="https://cdn.tailwindcss.com"></script>
-```
-
-That means the pages are still plain static HTML and can be served directly by GitHub Pages. No Tailwind CLI or PostCSS setup is required for the current design.
+Static multi-page website for the SJSU Chip Design Initiative club.
 
 ## Pages
 
-- `index.html` - Home, about, TinyTapeout focus, projects
-- `events.html` - Calendar placeholder, announcements, photo archive
-- `github.html` - GitHub organization and repo workflow
-- `resources.html` - Learning resources and slides
-- `join.html` - Registration and meeting info
+- `index.html` - Home page, sidebar links, calendar, and project display
+- `join.html` - Membership and contact info
+- `resources.html` - Learning resources
+- `updates.html` - Simple updates page
 
-## Images
+## Main Files
 
-Put real club images in `public/images/`.
+- `styles/home-layout.css` - Home page layout and homepage boxes
+- `styles/floppy-nav.css` - Floppy disk navigation styling
+- `styles/project-gallery.css` - Oscilloscope project display
+- `styles/pop-intro.css` - Opening pop animation
+- `scripts/pop-intro.js` - Opening image wall logic
+- `scripts/project-gallery.js` - Project switcher logic
+- `public/images/` - Site images and hand-drawn assets
 
-Suggested filenames are listed in `public/images/README.md`. When adding images to the HTML, use relative paths like:
-
-```html
-<img src="images/project-vga-controller.jpg" alt="VGA controller demo" />
-```
-
-Relative paths keep the site working when deployed as a GitHub Pages project site under `/repo-name/`.
-
-The club logo is stored as:
-
-- `public/images/cdi-logo-original.png` - preserved source copy
-- `public/images/cdi-logo-transparent.png` - transparent page/logo asset
-- `public/favicon.png` - browser tab icon
-- `public/apple-touch-icon.png` - mobile home-screen icon
-
-## Local Build
-
-This project can build through Vite:
+## Local Preview
 
 ```bash
-npm install
-npm run build
+deno run -A npm:vite@8.0.9 --host 127.0.0.1
 ```
 
-In this workspace, `deno task build` has also been verified.
+Open:
 
-## GitHub Pages Deployment
+```text
+http://127.0.0.1:5173/
+```
 
-The included workflow at `.github/workflows/deploy-pages.yml` builds the site and deploys the `dist` folder to GitHub Pages.
+## Build
 
-To enable it:
+```bash
+deno run -A npm:typescript@~6.0.2/tsc -b
+deno run -A npm:vite@8.0.9 build
+```
 
-1. Push this repo to GitHub.
-2. Open the repository settings.
-3. Go to `Pages`.
-4. Set the source to `GitHub Actions`.
-5. Push to `main`.
+The built site is generated in `dist/`.
 
-The Vite config uses `base: './'`, so generated links/assets work under both custom domains and project-page URLs.
+## GitHub Pages
+
+The workflow at `.github/workflows/deploy-pages.yml` builds the site and deploys `dist/` to GitHub Pages.

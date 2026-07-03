@@ -14,60 +14,97 @@
     <script type="module" src="scripts/project-gallery.js"></script>
 </head>
 <body class="home-page">
-    <!-- splash screen images get put inside this with javascript -->
+    <!-- opening splash thing, JS fills this with the pop out images -->
     <div class="pop-intro" data-pop-intro aria-hidden="true"><div class="pop-intro__field" data-pop-intro-field></div></div>
 
-    <!-- floppy menu -->
-    <nav class="floppy-nav" aria-label="Site navigation">
-      <a class="floppy-link floppy-link--home" href="index.html" aria-label="Home">
-        <img src="images/floppy-home.png" alt="Home" />
-      </a>
-      <a class="floppy-link floppy-link--join" href="join.html" aria-label="Join">
-        <img src="images/floppy-join.png" alt="Join" />
-      </a>
-      <a class="floppy-link floppy-link--resources" href="resources.html" aria-label="Resources">
-        <img src="images/floppy-resources.png" alt="Resources" />
-      </a>
-    </nav>
+    <main class="margin">
+      <!-- little speech status at the top, the text scrolls with css -->
+      <div class="status-post">
+        <img src="images/speach.png" class="status-face" alt="Chip character smiling" />
+        <div class="speech-bubble">
+          <div class="status-text scrolling-text"><span>Homepage is being built live. Check Discord for the newest meeting and project updates.</span></div>
+        </div>
+      </div>
 
-    <main class="home-shell">
+      <!-- main top area, left content and right sidebar -->
       <section class="home-columns">
         <div class="home-main-column">
-          <article class="panel intro-box">
-            <div class="panel-heading">
-              <img src="images/cdi-logo-transparent.png" alt="Chip Design Initiative logo" class="panel-logo" />
-              <div>
-                <p class="panel-kicker">San Jose State University</p>
-                <h1>Chip Design Initiative</h1>
+          <!-- about CDI box, this one scrolls if it gets too full -->
+          <article class="panel main-info-panel">
+            <div class="info-part intro-box">
+              <div class="panel-heading">
+                <img src="images/cdi-logo-transparent.png" alt="Chip Design Initiative logo" class="panel-logo" />
+                <div>
+                  <p class="panel-kicker">San Jose State University</p>
+                  <h1>Chip Design Initiative</h1>
+                </div>
+              </div>
+              <p class="panel-tagline">Face the Initiative, Build the Design </p>
+              <p> CDI Club is a student ran club where we provide opprotunities for students to work on concepts and topics related to Chip Design and Circuit Design as a whole. Our club is quite small! so we aim after learning and projects to put on a resume and get into ASIC design. We have done PSOC workshops, FPGA workshops, and lots of open-source/free software!</p>
+
+              <div class="panel-links">
+                <a href="join.html#registration">Want to Join?</a>
               </div>
             </div>
-            <p class="panel-tagline">Open-source RTL and silicon design for students.</p>
-            <p>CDI is a student-run SJSU engineering club for learning the digital design flow: idea, RTL, simulation, synthesis, silicon submission, and board bring-up.</p>
-            <p>The club is centered around TinyTapeout, Verilog HDL, open-source EDA tools, FPGA experiments, and making hardware projects less scary to start.</p>
-            <div class="panel-links">
-              <a href="join.html#registration">Want to Join?</a>
-              <a href="resources.html">Browse Resources</a>
+
+            <div class="info-part">
+              <p class="panel-kicker">What we do</p>
+              <h2>Student hardware ideas become working digital designs.</h2>
+              <p>Members bring small logic projects, PSoC demos, FPGA/Vivado experiments, and TinyTapeout-ready ideas into a shared club workflow.</p>
+              <p>We write readable RTL, run simulations, review waveforms, document projects, and help each other get unstuck before the design gets too mysterious.</p>
             </div>
           </article>
 
-          <article class="panel">
-            <p class="panel-kicker">What we do</p>
-            <h2>Student hardware ideas become working digital designs.</h2>
-            <p>Members bring small logic projects, PSoC demos, FPGA/Vivado experiments, and TinyTapeout-ready ideas into a shared club workflow.</p>
-            <p>We write readable RTL, run simulations, review waveforms, document projects, and help each other get unstuck before the design gets too mysterious.</p>
-          </article>
+          <!-- google calendar embed -->
+          <section class="calendar-box">
+            <div class="calendar-flex">
+              <iframe
+                title="CDI Google Calendar"
+                src="https://calendar.google.com/calendar/embed?src=cdi.sjsu%40gmail.com&ctz=America%2FLos_Angeles"
+                scrolling: no
+              ></iframe>
+            </div>
+          </section>
         </div>
 
-        <aside class="home-side-column">
-          <section class="panel little-box">
-            <p class="panel-kicker">Club status</p>
+        <!-- side bar box, links can be added here later -->
+        <aside class="panel side-board">
+          <!-- floppy image nav -->
+          <header class="side-nav-header">
+            <nav class="floppy-nav floppy-nav--side" aria-label="Site navigation">
+              <a class="floppy-link floppy-link--home" href="index.html" aria-label="Home">
+                <img src="images/floppy-home.png" alt="Home" />
+              </a>
+              <a class="floppy-link floppy-link--join" href="join.html" aria-label="Join">
+                <img src="images/floppy-join.png" alt="Join" />
+              </a>
+              <a class="floppy-link floppy-link--resources" href="updates.html" aria-label="Updates">
+                <img src="images/floppy-resources.png" alt="Resources" />
+              </a>
+            </nav>
+          </header>
+
+          <div class="side-section">
+            <h3>CLUB STATUS</h3>
             <p>Meeting room: TBD</p>
             <p>Lab night: TBD</p>
             <p>Current Thing: build student projects toward a future TinyTapeout submission.</p>
-          </section>
+          </div>
+
+          <!-- useful links -->
+          <div class="side-section general-links">
+            <h3>GENERAL LINKS</h3>
+             <ul>
+               <li><a href="https://calendar.google.com/calendar/embed?src=cdi.sjsu%40gmail.com&ctz=America%2FLos_Angeles">Event Calendar</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc1XJVmmeI6ApU85vqD8r12ORUr-p_DzMZ37G7i_m9TBEsBSA/viewform?usp=header">Membership Form</a></li>
+                <li><a href="https://github.com/cdi-sjsu">GitHub Organization</a></li>
+                <li><a href="mailto:cdi.sjsu@gmail.com">Email CDI</a></li>
+              </ul>
+          </div>
         </aside>
       </section>
 
+      <!-- project area -->
       <section class="project-zone" id="projects">
         <img src="images/projects-title-cdi.png" class="project-title-art" alt="Projects" />
         <div class="project-machine" data-project-gallery>
@@ -76,8 +113,8 @@
             <img src="images/under-construction-warning.jpg" alt="Project preview" data-project-image />
           </div>
           <div class="project-machine__text">
-            <h3 data-project-title>VGA Controller</h3>
-            <p data-project-description>Verilog HDL implementation for display drivers, timing generation, sync pulses, and pixel data experiments.</p>
+            <h3 data-project-title>VGA Game Of Life</h3>
+            <p data-project-description>Verilog implementation of John Conway's Game Of Life, Submitted to TinyTapeout in November 2025.</p>
           </div>
           <button class="project-machine__button project-machine__button--back" type="button" data-project-back>Back</button>
           <a class="project-machine__github" href="https://github.com/cdi-sjsu" aria-label="Open project GitHub" data-project-github>GitHub</a>
