@@ -3,9 +3,9 @@ import '../styles/project-gallery.css';
 const projects = [
   {
     title: 'VGA Game Of Life',
-    image: 'images/under-construction-warning.jpg',
+    image: 'images/GOLCoverPic.png',
     github: 'https://github.com/Thnk189/tt_um_SummerTT_HDL',
-    description: 'Verilog implementation of John Conway`s Game Of Life, Submitted to TinyTapeout in November 2025.',
+    description: 'Verilog implementation of John Conway`s Game Of Life, Submitted to TinyTapeout in November 2025. This was my first ever Verilog project :D, this was done as a project for Engineering Success',
   },
   {
     title: '8-bit Bi-Directional Shift Register + Magnitude Comparator',
