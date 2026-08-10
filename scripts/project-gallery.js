@@ -4,14 +4,14 @@ const projects = [
   {
     title: 'VGA Game Of Life',
     image: 'images/under-construction-warning.jpg',
-    github: 'https://github.com/cdi-sjsu',
+    github: 'https://github.com/Thnk189/tt_um_SummerTT_HDL',
     description: 'Verilog implementation of John Conway`s Game Of Life, Submitted to TinyTapeout in November 2025.',
   },
   {
-    title: '8-bit Password Detector',
+    title: '8-bit Bi-Directional Shift Register + Magnitude Comparator',
     image: 'images/under-construction-warning.jpg',
-    github: 'https://github.com/nicojeda189/CDI-Beginner-Workshops/tree/main/8-bitPasswordComparator',
-    description: 'Shift comparator project turning into an 8-bit password detector. A keypad or MCU enters a value from 0-255, the design converts/checks the binary pattern, then reports whether the password matched.',
+    github: 'https://github.com/Thnk189/shift-reg-magn-comp',
+    description: 'A Bi-Directional shift register that takes in a serial input from a switch that can be shifted left or right [dictated by another switch :D] This 8 bit value from the shift register is then compared to a magnitude comparator look in the verilog code man this description getting to long :skull:',
   },
   {
     title: 'Template',
