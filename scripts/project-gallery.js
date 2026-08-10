@@ -9,13 +9,13 @@ const projects = [
   },
   {
     title: '8-bit Bi-Directional Shift Register + Magnitude Comparator',
-    image: 'images/under-construction-warning.jpg',
+    image: 'public/images/under-construction-warning.jpg',
     github: 'https://github.com/Thnk189/shift-reg-magn-comp',
     description: 'A Bi-Directional shift register that takes in a serial input from a switch that can be shifted left or right [dictated by another switch :D] This 8 bit value from the shift register is then compared to a magnitude comparator look in the verilog code man this description getting to long :skull:',
   },
   {
     title: 'Template',
-    image: 'images/under-construction-warning.jpg',
+    image: 'public/images/under-construction-warning.jpg',
     github: '#',
     description: 'Hey Nic this is Nic making this template because I know you gonna forget how to get to this file its the ONE of TWO self explanatory java script files, just copy paste BOI!!!',
   },
