@@ -1,4 +1,4 @@
-import '../styles/project-gallery.css';
+
 
 const projects = [
   {
