@@ -1,4 +1,4 @@
-import '../styles/pop-intro.css';
+
 
 (() => {
   const intro = document.querySelector('[data-pop-intro]');
