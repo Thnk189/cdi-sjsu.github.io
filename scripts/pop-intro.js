@@ -10,51 +10,51 @@ import '../styles/pop-intro.css';
 
   const assets = [
     {
-      src: 'images/cdi-logo-transparent.png',
+      src: 'public/images/cdi-logo-transparent.png',
       alt: 'CDI logo',
     },
     {
-      src: 'images/cdi-logo-transparent.png',
+      src: 'public/images/cdi-logo-transparent.png',
       alt: 'CDI logo',
     },
     {
-      src: 'images/cdi-logo-transparent.png',
+      src: 'public/images/cdi-logo-transparent.png',
       alt: 'CDI logo',
     },
     {
-      src: 'images/cdi-logo-transparent.png',
+      src: 'public/images/cdi-logo-transparent.png',
       alt: 'CDI logo',
     },
     {
-      src: 'images/chip-character-dizzy.png',
+      src: 'public/images/chip-character-dizzy.png',
       alt: 'Dizzy chip character',
     },
     {
-      src: 'images/chip-character-sad.png',
+      src: 'public/images/chip-character-sad.png',
       alt: 'Sad chip character',
     },
     {
-      src: 'images/chip-character-angry.png',
+      src: 'public/images/chip-character-angry.png',
       alt: 'Angry chip character',
     },
     {
-      src: 'images/chip-character-knockout.png',
+      src: 'public/images/chip-character-knockout.png',
       alt: 'Knockout chip character',
     },
     {
-      src: 'images/chip-character-heart-eyes.png',
+      src: 'public/images/chip-character-heart-eyes.png',
       alt: 'Heart eyes chip character',
     },
     {
-      src: 'images/chip-character-shades.png',
+      src: 'public/images/chip-character-shades.png',
       alt: 'Shades chip character',
     },
     {
-      src: 'images/chip-character-surprised.png',
+      src: 'public/images/chip-character-surprised.png',
       alt: 'Surprised chip character',
     },
     {
-      src: 'images/chip-character-smile.png',
+      src: 'public/images/chip-character-smile.png',
       alt: 'Smiling chip character',
     },
   ];
