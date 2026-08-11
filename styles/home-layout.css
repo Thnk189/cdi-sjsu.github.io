@@ -150,7 +150,9 @@
 }
 
 .panel h1,
-.panel h2 {
+.panel h2,
+.home-main-column h1,
+.home-main-column h2 {
   margin: 8px 0 0;
   color: #fff;
   font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
