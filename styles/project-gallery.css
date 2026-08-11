@@ -46,14 +46,17 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  opacity: .9;
+  opacity: 1; /* Changed from .9 so blend-mode doesn't blow out image */
   background: #20242f;
+  position: relative;
+  z-index: 1; /* Keep below ::after overlay */
 }
 
 .project-machine__screen::after {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 2; /* Keeps scanline reflection strictly on top */
   background:
     repeating-linear-gradient(0deg, rgba(255,255,255,.08), rgba(255,255,255,.08) 1px, transparent 1px, transparent 5px),
     radial-gradient(circle at 48% 46%, transparent 45%, rgba(0,0,0,.22));
