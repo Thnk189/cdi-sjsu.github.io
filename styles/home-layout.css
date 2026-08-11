@@ -345,6 +345,7 @@ calendar-box {
 }
 
 .calendar-box iframe {
+  margin-top: 10px;
   display: block;
   width: 100%;
   height: 280px; 
