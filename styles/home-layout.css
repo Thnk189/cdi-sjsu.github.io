@@ -276,69 +276,7 @@
   color: #fff4b0;
 }
 
-.resource-list {
-  margin: 10px 0 24px;
-  padding-left: 20px;
-}
-
-.resource-list li {
-  margin: 14px 0;
-}
-
-.resource-list a {
-  color: #ffe86b;
-  font-size: 1.08rem;
-  font-weight: 900;
-}
-
-.resource-list span {
-  display: block;
-  margin-top: 4px;
-  color: #d6e2f2;
-  line-height: 1.5;
-}
-
-.resource-hub {
-  max-height: none;
-  overflow: visible;
-}
-
-.resource-grid {
-  /* resources page clickable cards */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 12px;
-  margin-top: 18px;
-}
-
-.resource-card {
-  display: block;
-  min-height: 118px;
-  padding: 12px;
-  color: #d6e2f2;
-  text-decoration: none;
-  background: rgba(6, 17, 43, .32);
-  border: 2px solid rgba(255, 210, 31, .55);
-}
-
-.resource-card strong {
-  display: block;
-  color: #ffe86b;
-  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
-  font-size: 1.05rem;
-}
-
-.resource-card span {
-  display: block;
-  margin-top: 8px;
-  line-height: 1.45;
-}
-
-.resource-card:hover {
-  background: rgba(255, 210, 31, .12);
-}
-
-calendar-box {
+.calendar-box {
   margin-top: 18px;
   overflow: hidden;
   border: 2px solid #ffd21f;
