@@ -108,6 +108,18 @@ p {
   padding: clamp(18px, 3vw, 34px);
 }
 
+.home-banner-link {
+  display: block;
+}
+
+.home-banner-image {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .main-info-panel {
   /* homepage about box, scrolls if text gets too tall */
   display: flex;
