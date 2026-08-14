@@ -1,4 +1,4 @@
-Chip Design Initiative Website
+# Chip Design Initiative Website
 
 Static website for the SJSU Chip Design Initiative club.
 
@@ -7,39 +7,6 @@ This is mostly hand-built HTML, CSS, JavaScript, and a bunch of CDI-flavored ima
 ## Pages
 
 - `index.html` - Home page, sidebar links, calendar, banner, and projects section
-
-## Local Preview
-
-```bash
-open index.html
-```
-
-Or run a local server from the repo root:
-
-```bash
-python3 -m http.server 5173
-```
-
-Then open:
-
-```text
-http://127.0.0.1:5173/
-```
-
-If the Node/Vite setup is still in the repo, this also works:
-
-```bash
-npm install
-npm run dev -- --host 127.0.0.1
-```
-
-## Deploying
-
-This repo is for GitHub Pages.
-
-If the site is served directly from the repo root, the important files are the root `.html` pages plus `styles/`, `scripts/`, and `public/`.
-
-If the GitHub Actions build workflow is still being used, make sure the build outputs every page that should go live, not just `index.html`.
 
 ## Notes
 
