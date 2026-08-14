@@ -21,15 +21,6 @@ p {
   font-size: clamp(15px, 1.3vw, 18px);
 }
 
-.join-page {
-  /* cork board background for the join page */
-  background:
-    linear-gradient(rgba(6, 17, 43, .08), rgba(6, 17, 43, .22)),
-    url("../public/images/cork-339.jpg");
-  background-size: 420px auto;
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
 
 .margin {
   /* keeps the website from touching the screen edges */
