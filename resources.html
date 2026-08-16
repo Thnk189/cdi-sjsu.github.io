@@ -6,77 +6,54 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <title>Chip Design Initiative | Resources</title>
-    <link rel="stylesheet" href="styles/floppy-nav.css" />
     <link rel="stylesheet" href="styles/home-layout.css" />
   </head>
   <body class="home-page">
     <main class="margin">
-      <!-- resources page has a big clickable link area and the same side bar style -->
-      <section class="home-columns">
-        <!-- main resource links, these are meant to be clicked like a shelf -->
-        <article class="panel page-panel resource-hub">
-          <p class="panel-kicker">Resources</p>
-          <h1>Pick a tool, doc, or rabbit hole.</h1>
-          <p>This page is a quick shelf of CDI links and public learning tools. It is meant to be clicked around, not read top to bottom.</p>
+      <nav class="resource-page-nav" aria-label="Site navigation">
+        <a href="index.html">Home</a>
+      </nav>
 
-          <h2>CDI stuff</h2>
-          <div class="resource-grid">
-            <a class="resource-card" href="mailto:cdi.sjsu@gmail.com?subject=CDI%20workshop%20slides"><strong>Presentation Slides</strong><span>Email CDI for workshop decks while the public slide folder is being organized.</span></a>
-            <a class="resource-card" href="https://github.com/nicojeda189/CDI-Beginner-Workshops"><strong>Beginner Workshops</strong><span>Starter HDL exercises, beginner examples, and project handoffs.</span></a>
-            <a class="resource-card" href="https://github.com/nicojeda189/CDI-Beginner-Workshops/tree/main/8-bitPasswordComparator"><strong>8-bit Password Comparator</strong><span>Shift comparator workshop project with Verilog source.</span></a>
-          </div>
+      <article class="resource-list-page">
+        <p class="panel-kicker">Resources</p>
+        <h1>Links, tools, and docs</h1>
 
-          <h2>Public tools</h2>
-          <div class="resource-grid">
-            <a class="resource-card" href="https://tinytapeout.com/"><strong>TinyTapeout</strong><span>Docs, specs, and open silicon submission flow.</span></a>
-            <a class="resource-card" href="https://docs.google.com/spreadsheets/d/152bluqPjCmm1HwcfXU2KHL6e7PWScxPmHF1n5vWbgtg/edit?usp=sharing"><strong>TinyTapeout Resource Doc</strong><span>The larger public spreadsheet behind this list.</span></a>
-            <a class="resource-card" href="https://wokwi.com/projects/354858054593504257"><strong>Wokwi TT Intro</strong><span>Browser-based digital logic design and simulation.</span></a>
-            <a class="resource-card" href="https://app.siliwiz.com/"><strong>SiliWiz</strong><span>Draw silicon, polysilicon, and metal layers in-browser.</span></a>
-            <a class="resource-card" href="https://hdlbits.01xz.net/wiki/Main_Page"><strong>HDLBits</strong><span>Short HDL exercises for Verilog practice.</span></a>
-            <a class="resource-card" href="https://nandgame.com/"><strong>NandGame</strong><span>Interactive logic practice starting from NAND gates.</span></a>
-            <a class="resource-card" href="https://www.makerchip.com/"><strong>Makerchip</strong><span>Browser HDL writing and simulation.</span></a>
-            <a class="resource-card" href="https://www.edaplayground.com/"><strong>EDA Playground</strong><span>Online Verilog/SystemVerilog/VHDL editor.</span></a>
-            <a class="resource-card" href="https://www.cocotb.org/"><strong>cocotb</strong><span>Python-based HDL verification.</span></a>
-            <a class="resource-card" href="https://openlane2.readthedocs.io/en/latest/getting_started/newcomers/index.html"><strong>OpenLane 2</strong><span>RTL to chip layout flow docs.</span></a>
-            <a class="resource-card" href="https://github.com/YosysHQ/yosys"><strong>Yosys</strong><span>Open-source Verilog synthesis.</span></a>
-            <a class="resource-card" href="https://gtkwave.sourceforge.net/"><strong>GTKWave</strong><span>Waveform viewer for simulation debugging.</span></a>
-            <a class="resource-card" href="https://github.com/hneemann/Digital"><strong>Digital</strong><span>Schematic-based logic design and simulation.</span></a>
-            <a class="resource-card" href="https://8bitworkshop.com/v3.9.0/?platform=verilog&file=clock_divider.v"><strong>8bitworkshop</strong><span>Browser Verilog templates and examples.</span></a>
-            <a class="resource-card" href="https://www.fpga4fun.com/"><strong>FPGA4Fun</strong><span>Practical Verilog/FPGA examples.</span></a>
-            <a class="resource-card" href="https://vga-playground.com/"><strong>VGA Playground</strong><span>Browser VGA timing and graphics simulator.</span></a>
-          </div>
-        </article>
+        <h2>CDI stuff</h2>
+        <ul class="resource-link-list">
+          <li><a href="mailto:cdi.sjsu@gmail.com?subject=CDI%20workshop%20slides">Presentation Slides</a></li>
+          <li><a href="https://github.com/nicojeda189/CDI-Beginner-Workshops">Beginner Workshops</a></li>
+          <li><a href="https://github.com/nicojeda189/CDI-Beginner-Workshops/tree/main/8-bitPasswordComparator">8-bit Password Comparator</a></li>
+        </ul>
 
-        <!-- reused side bar from the home page style -->
-        <aside class="panel side-board">
-          <!-- floppy nav at the top -->
-          <header class="side-nav-header">
-            <nav class="floppy-nav floppy-nav--side" aria-label="Site navigation">
-              <a class="floppy-link floppy-link--home" href="index.html" aria-label="Home"><img src="images/floppy-home.png" alt="Home" /></a>
-              <a class="floppy-link floppy-link--join" href="join.html" aria-label="Join"><img src="images/floppy-join.png" alt="Join" /></a>
-              <a class="floppy-link floppy-link--resources" href="updates.html" aria-label="Updates"><img src="images/floppy-resources.png" alt="Resources" /></a>
-            </nav>
-          </header>
+        <h2>Public tools</h2>
+        <ul class="resource-link-list">
+          <li><a href="https://tinytapeout.com/">TinyTapeout</a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/152bluqPjCmm1HwcfXU2KHL6e7PWScxPmHF1n5vWbgtg/edit?usp=sharing">TinyTapeout Resource Doc</a></li>
+          <li><a href="https://wokwi.com/projects/354858054593504257">Wokwi TT Intro</a></li>
+          <li><a href="https://app.siliwiz.com/">SiliWiz</a></li>
+          <li><a href="https://hdlbits.01xz.net/wiki/Main_Page">HDLBits</a></li>
+          <li><a href="https://nandgame.com/">NandGame</a></li>
+          <li><a href="https://www.makerchip.com/">Makerchip</a></li>
+          <li><a href="https://www.edaplayground.com/">EDA Playground</a></li>
+          <li><a href="https://www.cocotb.org/">cocotb</a></li>
+          <li><a href="https://openlane2.readthedocs.io/en/latest/getting_started/newcomers/index.html">OpenLane 2</a></li>
+          <li><a href="https://github.com/YosysHQ/yosys">Yosys</a></li>
+          <li><a href="https://gtkwave.sourceforge.net/">GTKWave</a></li>
+          <li><a href="https://github.com/hneemann/Digital">Digital</a></li>
+          <li><a href="https://8bitworkshop.com/v3.9.0/?platform=verilog&file=clock_divider.v">8bitworkshop</a></li>
+          <li><a href="https://www.fpga4fun.com/">FPGA4Fun</a></li>
+          <li><a href="https://vga-playground.com/">VGA Playground</a></li>
+        </ul>
 
-          <div class="side-section">
-            <h3>RESOURCE NOTES</h3>
-            <p>Start with CDI workshop material if you are new.</p>
-            <p>Use public tools when you want extra practice or examples.</p>
-          </div>
-
-          <!-- quick links that are useful from basically every page -->
-          <div class="side-section general-links">
-            <h3>GENERAL LINKS</h3>
-            <ul>
-              <li><a href="https://discord.gg/MGekkTQVfd">Discord Server</a></li>
-              <li><a href="https://calendar.google.com/calendar/embed?src=cdi.sjsu%40gmail.com&ctz=America%2FLos_Angeles">Event Calendar</a></li>
-              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc1XJVmmeI6ApU85vqD8r12ORUr-p_DzMZ37G7i_m9TBEsBSA/viewform?usp=header">Membership Form</a></li>
-              <li><a href="https://github.com/cdi-sjsu">GitHub Organization</a></li>
-              <li><a href="mailto:cdi.sjsu@gmail.com">Email CDI</a></li>
-            </ul>
-          </div>
-        </aside>
-      </section>
+        <h2>General links</h2>
+        <ul class="resource-link-list">
+          <li><a href="https://discord.gg/MGekkTQVfd">Discord Server</a></li>
+          <li><a href="https://calendar.google.com/calendar/embed?src=cdi.sjsu%40gmail.com&ctz=America%2FLos_Angeles">Event Calendar</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc1XJVmmeI6ApU85vqD8r12ORUr-p_DzMZ37G7i_m9TBEsBSA/viewform?usp=header">Membership Form</a></li>
+          <li><a href="https://github.com/cdi-sjsu">GitHub Organization</a></li>
+          <li><a href="mailto:cdi.sjsu@gmail.com">Email CDI</a></li>
+        </ul>
+      </article>
     </main>
   </body>
 </html>
