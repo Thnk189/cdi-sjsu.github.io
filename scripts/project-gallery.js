@@ -19,6 +19,12 @@ const projects = [
     github: '#',
     description: 'Hey Nic this is Nic making this template because I know you gonna forget how to get to this file its the ONE of TWO self explanatory java script files, just copy paste BOI!!!',
   },
+   {
+    title: 'Memrister Emulator',
+    image: 'public/images/under-construction-warning.jpg',
+    github: 'https://github.com/Thnk189/Memrister-Verilog-Behav-Model',
+    description: 'This is a digital behavoiral Model of a memrister, currently in a semi-complete state it utilizes look up tables for the chosen windowing function as well as a built in sine generator to give a simulated frequency. This project will soon have Analog capabilities through the use of a DAC with measurments to translate 8 bit digital signals into actual analog voltage, current, and resistance values. ',
+  },
 ];
 
 const gallery = document.querySelector('[data-project-gallery]');
