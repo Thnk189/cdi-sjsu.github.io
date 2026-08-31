@@ -1,54 +1,109 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <title>Chip Design Initiative | Join</title>
-    <link rel="stylesheet" href="styles/floppy-nav.css" />
-    <link rel="stylesheet" href="styles/home-layout.css" />
-    <link rel="stylesheet" href="styles/join-page.css" />
-  </head>
-  <body class="home-page join-page">
-    <main class="join-board" id="registration">
-      <!-- home floppy is just hanging out in the corner -->
-      <a class="join-home-floppy" href="index.html" aria-label="Home">
-        <img src="images/floppy-home.png" alt="Home" />
-      </a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <title>Chip Design Initiative | Join</title>
+  <link rel="stylesheet" href="styles/floppy-nav.css" />
+  <link rel="stylesheet" href="styles/home-layout.css" />
+  <link rel="stylesheet" href="styles/join-page.css" />
+</head>
+<body>
+<main class="margin">
 
-
-        <p>an outline for being a onboarding for people</p>
-      <h2>Glad your interested!</h2>
-            <p>In order to be an official member you must fulfill a simple three step requirement</p>
-      <ol>
-        <li> Join the Official Chip Design Initiative SAMMY APP Club</li>
-        <li> Be apart of the discord (its how we do 90% of our communications) </li>
-        <li> <b>And tell an officer you joined the SAMMY APP RSO </b></li>
-      </ol>
-<a href="https://sammyapp.sjsu.edu/feeds?type=club&type_id=36010&tab=about" target="_blank">
-      <h3>Click here to join us on the Sammy App</h3>
-</a>
-      
-      <h2>Step Up: We Are Hiring Officers!</h2>
-            <p>Want to help shape the direction of the club? The CDI team is looking for active indivduals that can help grow this club in the community and events we do. We have three main branches that we will be testing this semester that control our non-existent Standard Operation Procedures</p>
-      <p> Some Roles include but not limited to </p>
-      <ul>
-        <li> Social media managers</li>
-        <li> Workshop planners</li>
-        <li> Outreach </li>
-        <li> Executive Officers (like Secretary, VP, etc) </li>
-        <li> Fundraising Leads</li>
-        <li> Team to work on the Fundraising</li>
-        <li> Really focuused on Leads that can do work</li>
+  <!-- MAIN MEMBER ONBOARDING CONTENT -->
+  <div class="flex-container">
+    <div class="flex-item-left" style="flex: 0 0 650px; max-width: 100%;">
+      <h2>Glad You're Interested!</h2>
+      <p>In order to become an official member, complete these 3 simple steps:</p>
+      <ul class="steps-list">
+        <li>Join the Official Chip Design Initiative <strong>SAMMY APP Club</strong></li>
+        <li>Be part of our <strong>Discord</strong> (where 90% of club communication happens)</li>
+        <li><strong>Tell an officer</strong> you joined the SAMMY APP RSO</li>
       </ul>
-            <p>If you feel like yo ucan help out, and want to gain leadership experience, fill out the form below! Roles are very loose as we are a small club so any new officers we can set a perfect role for you. </p>
-        </section>
+      <a href="https://sammyapp.sjsu.edu/feeds?type=club&type_id=36010&tab=about" target="_blank" class="sammy-btn">
+        Click here to join us on the Sammy App
+      </a>
+    </div>
+    
+    <div class="flex-item-right">
+      <!-- insert the navigation here, it will be the Floppys again but with club status and stuff no general links -->
+    </div>
+  </div>
 
-      will make an embedded google form for Officer recruitment application thingy
+  <!-- HIRING BANNER -->
+  <div class="flex-container">
+    <div class="flex-item-left">
+      <h1>We Are Hiring Officers!</h1>
+      <p>The CDI team is looking for active indivduals that can help grow this club in the community and events we do. We have three main branches that we will be testing this semester that control our non-existent Standard Operation Procedures</p>
+    </div>
+    <div class="flex-item-right" style="flex: 0 0 250px; max-width: 100%;"> 
+      <!-- insert chip inside this box -->
+    </div>
+  </div>
 
+  <!-- EXECUTIVE BRANCH TOP BLOCK -->
+  <div class="flex-container" style="max-width: 90%; margin-left: auto; margin-right: auto;">
+    <div class="flex-item-full">
+      <h2>The Executive Branch</h2>
+      <p>Handles high-level strategic planning, club paperwork, forms, and team management. Oversees either the Community or Projects sub-branch and reports directly in weekly meetings with the President.</p>
+      <div class="role-item">
+        <strong>Secretary / Executive Officer:</strong> Manages paperwork, tracks meeting updates, and keeps club operations running smoothly.
+      </div>
+    </div>
+  </div>
 
-     
-    </main>
-  </body>
+  <!-- 2-COLUMN BRANCH LAYOUT -->
+  <div class="flex-container">
+    
+    <!-- PROJECTS BRANCH -->
+    <div class="flex-item-left">
+      <h2>The Project Branch</h2>
+      <p>Drives technical execution, workshop events, and club design initiatives—including our main semester project, a <strong>TinyTapeout CPU</strong>.</p>
+      
+      <div class="role-item">
+        <strong>Events Manager:</strong> Handles event scoping, budgeting, demo prep, logistics, hardware setups, and live demo assistance during workshops.
+      </div>
+      <div class="role-item">
+        <strong>Project Manager:</strong> Manages sub-teams, regulates design workflows, and ensures design milestones are met for our TinyTapeout CPU submission.
+      </div>
+    </div>  
+    
+    <!-- COMMUNITY BRANCH -->
+    <div class="flex-item-right">
+      <h2>The Community Branch</h2>
+      <p>Drives member interaction, social media, visual content creation, and funding efforts across three sub-teams:</p>
+      
+      <h4>📢 Community Engagement</h4>
+      <div class="role-item"><strong>Branch Lead:</strong> Overlooks sub-teams and relays weekly progress updates.</div>
+      <div class="role-item"><strong>Social Media Manager:</strong> Builds post schedules and manages social platform activity.</div>
+      <div class="role-item"><strong>Discord Community Lead:</strong> Moderates the server, manages channels, and posts announcements.</div>
+
+      <h4>🎨 Media Production</h4>
+      <div class="role-item"><strong>Media Production Lead:</strong> Coordinates designers and photographers on schedule.</div>
+      <div class="role-item"><strong>Graphic Designer:</strong> Creates posters, event flyers, web graphics, and social media visuals.</div>
+      <div class="role-item"><strong>Photographer / Videographer:</strong> Captures photos/videos at workshops and events.</div>
+
+      <h4>💡 Fundraising</h4>
+      <div class="role-item"><strong>Director of Fundraising:</strong> Sets financial goals and leads club funding strategy.</div>
+      <div class="role-item"><strong>Campaign Planner:</strong> Organizes campus fundraising events.</div>
+      <div class="role-item"><strong>Grants / Sponsorship Coordinator:</strong> Researches grants, drafts applications, and manages sponsor outreach.</div>
+    </div>
+
+  </div>
+
+  <!-- APPLY FOOTER -->
+  <div class="flex-container">
+    <div class="flex-item-full" style="text-align: center;">
+      <h2>Ready to Apply?</h2>
+      <p>Roles are flexible, and we can set up a custom position tailored to your skills!</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1XJVmmeI6ApU85vqD8r12ORUr-p_DzMZ37G7i_m9TBEsBSA/viewform?usp=header" target="_blank" class="sammy-btn">
+        Apply for Officer Recruitment
+      </a>
+    </div>
+  </div>
+
+</main>
+</body>
 </html>
